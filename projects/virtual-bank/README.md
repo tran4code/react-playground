@@ -4,10 +4,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Addition installation
 
+rafce for shortcut
+install e7 from vs studio code
 npm install react-icons --save
 npm i react-scroll 
 npm install --save styled-components
 npm install react-router-dom
+fonts.google.com/
 
 ## Available Scripts
 

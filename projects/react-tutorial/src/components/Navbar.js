@@ -13,7 +13,7 @@ const Nav = styled.nav`
     z-index: 100;
     position: fixed;
     width: 100%;
-    /* background: red; */
+    /* background: red;  */
 `;
 
 const NavLink = css`
@@ -72,11 +72,11 @@ const NavBtn = styled.div`
     }
 `;
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return (
         <Nav>
             <Logo to="/">ELIXR</Logo>
-            <MenuBars />
+            <MenuBars onClick={toggle}/>
             <NavMenu>
                 {menuData.map((item, index) => (
                     <NavMenuLinks to={item.link} key={index}>
@@ -85,7 +85,9 @@ const Navbar = () => {
                 ))}
             </NavMenu>
             <NavBtn>
-                <Button to="/contact" primary='true'>Contact Us</Button>
+                <Button to="/contact" primary='true'>
+                    Contact Us
+                </Button>
             </NavBtn>
         </Nav>
     )

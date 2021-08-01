@@ -16,9 +16,8 @@ export const GraphContainer = styled.div`
 const GraphMeat = () => {
     return (
         <>
-            <h1>HIee</h1>
-            <GraphContainer>
-
+            <GraphContainer >
+                
             </GraphContainer>
         </>
     )
